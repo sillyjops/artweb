@@ -156,7 +156,7 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 300;
-		color: #666;
+		color: #353535;
 	}
 
 	em, i {
@@ -175,7 +175,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #E27689;
+			color: #ffffff;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -1772,8 +1772,9 @@ input, select, textarea {
 
 		.image.featured {
 			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
+			width: 40%;
+			float:left;
+			margin: 0 2em 0 0;
 		}
 
 		.image.left {
@@ -1992,7 +1993,7 @@ input, select, textarea {
 		}
 
 			.item header h3 {
-				font-size: 1em;
+				font-size: 0.9em;
 			}
 
 /* Icons */
@@ -2046,7 +2047,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
+		background: #000000 url("images/overlay.png");
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -2169,7 +2170,7 @@ input, select, textarea {
 				}
 
 					#nav ul li a.active span:before {
-						color: #e27689;
+						color: #ffffff;
 					}
 
 /* Footer */
@@ -2256,7 +2257,13 @@ input, select, textarea {
 			}
 
 			#main > section.three {
+				text-align: left;
 				background-color: #ecf1f1;
+			}
+
+			#main > section.pointfive {
+				text-align: left;
+				background-color: #f5fafa;
 			}
 
 			#main > section.four {
