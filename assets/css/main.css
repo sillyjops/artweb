@@ -2251,9 +2251,9 @@ input, select, textarea {
 
 			#main > section.home {
 				/* for janie: colors! */
-				--home-gallery: #eee3b0; /* GALLERY card color*/
-				--home-shop: #eee3b0; /* SHOP card color */
-				--home-lfi: #ffadc9; /* LFI card color */
+				--home-gallery: #fd9a6c; /* GALLERY card color*/
+				--home-shop: #92b172; /* SHOP card color */
+				--home-lfi: #e49898; /* LFI card color */
 
 				display: flex;
 				flex-direction: column;
