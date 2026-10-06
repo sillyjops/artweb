@@ -2279,10 +2279,7 @@ input, select, textarea {
 					grid-template-columns: repeat(3, minmax(0, 1fr));
 					gap: 2.75em;
 					align-items: start;
-					margin-block: auto;
-					width: 100%;
-					max-width: max(30em, calc((100vh - 25em) * 2.3 + 5.5em));
-					margin-inline: auto;
+					margin-block: auto; /* centre in any spare height */
 				}
 
 				.home-link {
@@ -2367,7 +2364,7 @@ input, select, textarea {
 					align-items: flex-end;
 					gap: 2em;
 					flex: 0 0 auto;
-					padding-top: 3em;
+					padding-top: 3em; /* guaranteed minimum gap below the cards */
 				}
 
 					.home-badge {
@@ -2419,6 +2416,52 @@ input, select, textarea {
 
 					.home-badge--vai {
 						width: 30%;
+					}
+
+				}
+
+				@media screen and (min-width: 737px) {
+
+					#main > section.home {
+						container-type: inline-size;
+						padding: 0;
+					}
+
+					#main > section.home .container {
+						font-size: clamp(9px, min(2.63vh, calc((100vw - 375px) / 54)), 40px); /* fallback */
+						font-size: clamp(9px, min(2.63vh, 1.85cqw), 40px);
+						max-width: none;
+						min-height: 100vh;
+						padding: 2.5em;
+					}
+
+					.home-frames {
+						grid-template-columns: repeat(3, minmax(0, 1fr));
+						gap: 2em;
+						width: 49em;
+						max-width: 100%;
+						margin-inline: auto;
+					}
+
+					.home-button {
+						white-space: nowrap;
+					}
+
+					.home-badges {
+						width: 49em;
+						max-width: 100%;
+						margin-inline: auto;
+						padding-top: 2.5em;
+					}
+
+					.home-badge--hi {
+						width: 10em;
+						max-width: none;
+					}
+
+					.home-badge--vai {
+						width: 7em;
+						max-width: none;
 					}
 
 				}
